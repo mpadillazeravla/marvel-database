@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Series from './pages/Series';
 import Comics from './pages/Comics';
 import Error404 from './pages/Error404';
+import Header from './components/Header';
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <div>
     {/* Esto es el sistema de rutas que no tiene mas q decir q en cada path cargue cada una de esas vistas */}
       <BrowserRouter>
-
+      <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/inicio' element={<Home/>}/>
